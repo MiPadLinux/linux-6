@@ -22,7 +22,7 @@
 #include "tegra124.dtsi"
 #include "tegra124-mocha-pmic.dtsi"
 #include "tegra124-mocha-pinmux.dtsi"
-
+#include "tegra124-mocha-mipi.dtsi"
 
 / {
 	model = "NVIDIA Tegra124 MOCHA";
