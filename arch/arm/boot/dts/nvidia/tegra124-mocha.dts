@@ -423,12 +423,14 @@
 		status = "okay";
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinmux_default>;
+		pinmux_default: common {
 		pu4 {
 			nvidia,pins = "pu4";
 			nvidia,function = "pwm1";
 			nvidia,enable-input = <TEGRA_PIN_ENABLE>;
 			nvidia,pull = <TEGRA_PIN_PULL_UP>;
 			nvidia,tristate = <TEGRA_PIN_ENABLE>;
+		};
 		};
 	};
 
