@@ -20,7 +20,6 @@
 /dts-v1/;
 
 #include "tegra124.dtsi"
-#include <dt-bindings/gpio/tegra-gpio.h>
 #include <dt-bindings/interrupt-controller/irq.h>
 
 / {
@@ -417,6 +416,20 @@
 					};
 				};
 			};
+		};
+	};
+
+	{
+	pinmux: pinmux@70000868 {
+		status = "okay";
+		pinctrl-names = "default";
+		pinctrl-0 = <&pinmux_default>;
+		pu4 {
+			nvidia,pins = "pu4";
+			nvidia,function = "pwm1";
+			nvidia,enable-input = <TEGRA_PIN_ENABLE>;
+			nvidia,pull = <TEGRA_PIN_PULL_UP>;
+			nvidia,tristate = <TEGRA_PIN_ENABLE>;
 		};
 	};
 
