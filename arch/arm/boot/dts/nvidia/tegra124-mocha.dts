@@ -1,7 +1,7 @@
 /*
  * arch/arm/boot/dts/tegra124-mocha.dts
  *
- * Copyright (c) 2018, Alexandrov Dmirty.  All rights reserved.
+ * Copyright (c) 2018, Alexandrov Dmirty  All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,18 +20,12 @@
 /dts-v1/;
 
 #include "tegra124.dtsi"
-#include "tegra124-mocha-pmic.dtsi"
-#include "tegra124-mocha-pinmux.dtsi"
-#include "tegra124-mocha-mipi.dtsi"
 
 / {
-	model = "NVIDIA Tegra124 MOCHA";
-	compatible = "nvidia,mocha", "nvidia,tegra124";
-	nvidia,boardids = "1780:1100:3:A:7","1845:1000:0:A:7";
 
 	aliases {
-		rtc0 = "/i2c@0,7000d000/pmic@58";
-		rtc1 = "/rtc@0,7000e000";
+		rtc0 = "/i2c@7000d000/pmic@58";
+		rtc1 = "/rtc@7000e000";
 	};
 
 	memory {
