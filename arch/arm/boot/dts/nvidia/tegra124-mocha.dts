@@ -419,7 +419,6 @@
 		};
 	};
 
-	{
 	pinmux: pinmux@70000868 {
 		status = "okay";
 		pinctrl-names = "default";
