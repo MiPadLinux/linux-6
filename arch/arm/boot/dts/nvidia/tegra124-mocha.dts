@@ -64,7 +64,7 @@
 		status = "okay";
 	};
 
-	gpu@0,57000000 {
+	gpu@57000000 {
 		vdd-supply = <&vdd_gpu>;
 		status = "okay";
 	};
@@ -181,6 +181,8 @@
 
     i2c@7000d000 {
 		status = "okay";
+		clock-frequency = <400000>;
+
 		palmas: tps65913@58 {
 			compatible = "ti,palmas";
 			reg = <0x58>;
