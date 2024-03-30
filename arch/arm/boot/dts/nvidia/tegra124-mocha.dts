@@ -34,7 +34,7 @@
 	};
 
 	chosen {
-		bootargs = "cros_legacy";
+		bootargs = "cros_legacy console=ttyS0,115200n8 printk earlyprintk loglevel=8 no_console_suspend=1";
 	};
 
 	reserved-memory {
